@@ -15,7 +15,7 @@
 	];
 </script>
 
-<main class="flex flex-col gap-2 p-4">
+<main class="flex flex-col gap-2 p-8">
 	<h3>Welcome!</h3>
 
 	<p>This is simply my notes for everything I've learn.</p>

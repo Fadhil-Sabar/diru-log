@@ -9,7 +9,7 @@
 	<meta name="description" content={data.meta.description} />
 </svelte:head>
 
-<article class="prose p-4">
+<article class="prose p-8 max-w-none">
 	<header class="mb-8">
 		<h1 class="text-[2em]">{data.meta.title}</h1>
 		<div class="mt-2 flex gap-2 flex-col text-sm text-gray-500">

@@ -18,7 +18,7 @@
 	// ];
 </script>
 
-<nav class="flex justify-between p-4">
+<nav class="flex justify-between p-8">
 	<h4>Diru</h4>
 	<Drawer direction="top">
 		<DrawerTrigger>

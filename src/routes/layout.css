@@ -132,45 +132,49 @@
 		@apply bg-background text-foreground;
 	}
 
-	/* h1 { */
-	/* 	@apply text-[1.5em] font-bold; */
-	/* } */
-	/**/
-	/* h3 { */
-	/* 	@apply text-[1.25em] font-semibold; */
-	/* } */
-	/**/
-	/* h4 { */
-	/* 	@apply text-[1.1em] font-semibold; */
-	/* } */
+	h1 {
+		@apply text-[1.5em] font-bold;
+	}
+
+	h3 {
+		@apply text-[1.25em] font-semibold;
+	}
+
+	h4 {
+		@apply text-[1.1em] font-semibold;
+	}
 	button:not([disabled]),
 	[role='button']:not([disabled]) {
 		cursor: pointer;
 	}
 
-  .content *{
-    @apply tracking-wide
-  }
+	.content * {
+		@apply tracking-wide;
+	}
 }
 
 @utility prose {
-  --tw-prose-body: var(--color-primary);
-  --tw-prose-headings: var(--color-primary);
-  --tw-prose-bold: var(--color-primary);
-  --tw-prose-quote-borders: var(--color-slate-300);
-  --tw-prose-quotes: var(--color-muted-foreground);
-  --tw-prose-code: var(--color-primary);
+	--tw-prose-body: var(--color-primary);
+	--tw-prose-headings: var(--color-primary);
+	--tw-prose-bold: var(--color-primary);
+	--tw-prose-quote-borders: var(--color-slate-300);
+	--tw-prose-quotes: var(--color-muted-foreground);
+	--tw-prose-code: var(--color-primary);
+	--tw-prose-a: var(--color-primary);
 
-  code {
-    &::before,
-    &::after {
-      display: none;
-    }
-    text-wrap: nowrap;
-  }
+	code {
+		&::before,
+		&::after {
+			display: none;
+		}
+		text-wrap: nowrap;
+	}
 
-  blockquote {
-    font-weight: 400;
-  }
+	blockquote {
+		font-weight: 400;
+	}
+
+	a {
+		@apply font-semibold text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary;
+	}
 }
-

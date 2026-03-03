@@ -51,7 +51,7 @@
 	<meta name="twitter:description" content={data.description} />
 </svelte:head>
 
-<article class="prose max-w-none animate-in p-6 duration-700 fade-in slide-in-from-bottom-4">
+<article class="prose max-w-none animate-in px-6 pb-6 duration-700 fade-in slide-in-from-bottom-4">
 	<header class="mb-12">
 		<a
 			href="/"

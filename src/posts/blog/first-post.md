@@ -18,6 +18,6 @@ So I have a few friends that have something like this. The first one is Ahsan, [
 
 I was having a blogspot once in my Junior High School, and I was really enjoy writing about something. It comes from homework, but I really enjoy the moment. Yes, it is blogspot, long time no hear about that word..
 
-So, hopefully there will be more post about anything, and I hope I'm being consistent too on bringing good things around the world.
+So, I hope I'm being consistent to share about my thought or experience.
 
 Thank you everyone for reading, happy ramadhan!

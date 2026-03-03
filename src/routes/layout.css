@@ -162,6 +162,10 @@
 	--tw-prose-code: var(--color-primary);
 	--tw-prose-a: var(--color-primary);
 
+	h1 {
+		@apply text-[2em];
+	}
+
 	code {
 		&::before,
 		&::after {

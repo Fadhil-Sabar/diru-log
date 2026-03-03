@@ -14,7 +14,7 @@
 	<title>Diru Log</title>
 </svelte:head>
 
-<main class="flex animate-in flex-col gap-6 p-8 duration-1000 fade-in slide-in-from-bottom-4">
+<main class="flex animate-in flex-col gap-6 p-6 duration-1000 fade-in slide-in-from-bottom-4">
 	<section class="flex flex-col gap-2">
 		<h1 class="font-bold tracking-tight">Hello, I'm Fadhil!</h1>
 		<p class="max-w-lg leading-relaxed text-muted-foreground">

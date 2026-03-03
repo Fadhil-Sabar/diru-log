@@ -14,7 +14,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-50 flex items-center justify-between border-b border-border/50 bg-background/80 p-6 backdrop-blur-md"
+	class="sticky top-0 z-50 flex items-center justify-between border-b border-border/50 bg-background/80 px-6 py-4 backdrop-blur-md"
 >
 	<div class="flex items-center gap-8">
 		<h4 class="text-xl font-bold tracking-tighter transition-colors hover:text-primary">

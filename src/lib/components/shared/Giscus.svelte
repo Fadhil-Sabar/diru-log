@@ -1,4 +1,4 @@
-<div class="py-4">
+<div class="pt-6">
 	<script
 		src="https://giscus.app/client.js"
 		data-repo="Fadhil-Sabar/diru-log"

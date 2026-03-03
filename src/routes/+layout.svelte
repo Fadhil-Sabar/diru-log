@@ -4,6 +4,7 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import Navbar from '$lib/components/shared/Navbar.svelte';
 	import Footer from '$lib/components/shared/Footer.svelte';
+	import { dev } from '$app/environment';
 
 	let { children } = $props();
 </script>
@@ -11,6 +12,13 @@
 <svelte:head
 	><link rel="icon" href={favicon} />
 	<title>Diru Log</title>
+	{#if !dev}
+		<script
+			data-goatcounter="https://diru.goatcounter.com/count"
+			async
+			src="//gc.zgo.at/count.js"
+		></script>
+	{/if}
 </svelte:head>
 
 <ModeWatcher />

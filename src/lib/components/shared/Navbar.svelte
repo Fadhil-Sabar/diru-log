@@ -13,17 +13,22 @@
 	];
 </script>
 
-<nav class="flex items-center justify-between p-8 border-b border-border/50 bg-background/80 backdrop-blur-md sticky top-0 z-50">
+<nav
+	class="sticky top-0 z-50 flex items-center justify-between border-b border-border/50 bg-background/80 px-8 py-4 backdrop-blur-md"
+>
 	<div class="flex items-center gap-8">
-		<h4 class="text-xl font-bold tracking-tighter hover:text-primary transition-colors">
+		<h4 class="text-xl font-bold tracking-tighter transition-colors hover:text-primary">
 			<a href={resolve('/')}>Diru Log</a>
 		</h4>
-		
-		<div class="hidden md:flex items-center gap-6">
+
+		<div class="hidden items-center gap-6 md:flex">
 			{#each navLinks as link}
-				<a 
-					href={resolve(link.path as any)} 
-					class="text-sm font-medium transition-colors hover:text-primary {page.url.pathname === link.path ? 'text-primary' : 'text-muted-foreground'}"
+				<a
+					href={resolve(link.path as any)}
+					class="text-sm font-medium transition-colors hover:text-primary {page.url.pathname ===
+					link.path
+						? 'text-primary'
+						: 'text-muted-foreground'}"
 				>
 					{link.title}
 				</a>
@@ -32,28 +37,31 @@
 	</div>
 
 	<div class="flex items-center gap-4">
-		<a 
-			href="https://github.com/Fadhil-Sabar" 
-			target="_blank" 
+		<a
+			href="https://github.com/Fadhil-Sabar"
+			target="_blank"
 			rel="noopener noreferrer"
-			class="p-2 rounded-full hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground"
+			class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 		>
 			<Github size={20} />
 		</a>
 
 		<div class="md:hidden">
 			<Drawer direction="top">
-				<DrawerTrigger class="p-2 rounded-md hover:bg-secondary transition-colors">
+				<DrawerTrigger class="rounded-md p-2 transition-colors hover:bg-secondary">
 					<Menu size={24} />
 				</DrawerTrigger>
 				<DrawerContent class="h-full w-full">
-					<div class="flex flex-col p-8 gap-6 h-full">
-						<h4 class="text-xl font-bold mb-4">Menu</h4>
+					<div class="flex min-h-fit flex-col gap-6 p-8">
+						<h4 class="mb-4 text-xl font-bold">Menu</h4>
 						{#each navLinks as link}
 							<DrawerClose>
-								<a 
-									href={resolve(link.path as any)} 
-									class="text-lg font-medium hover:text-primary transition-colors {page.url.pathname === link.path ? 'text-primary' : 'text-foreground'}"
+								<a
+									href={resolve(link.path as any)}
+									class="text-lg font-medium transition-colors hover:text-primary {page.url
+										.pathname === link.path
+										? 'text-primary'
+										: 'text-foreground'}"
 								>
 									{link.title}
 								</a>
@@ -65,4 +73,3 @@
 		</div>
 	</div>
 </nav>
-

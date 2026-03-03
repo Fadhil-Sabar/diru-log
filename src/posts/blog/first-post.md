@@ -3,7 +3,7 @@ title: First Post
 date: '2026-03-01'
 description: Small chit chat about my first post.
 category: blog
-tags: ['sveltekit', 'webdev']
+tags: ['webdev', 'personal']
 writer: Fadhil Andriawan
 lang: EN
 ---

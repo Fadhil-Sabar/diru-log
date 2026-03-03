@@ -1,0 +1,16 @@
+main {
+  --color-canvas-default: transparent; 
+  --color-canvas-subtle: var(--muted);
+  
+  --color-fg-default: var(--foreground);
+  --color-fg-muted: var(--muted-foreground);
+  
+  --color-border-default: var(--border);
+  --color-accent-fg: var(--primary);
+  
+  --color-btn-primary-bg: var(--primary);
+  --color-btn-primary-border: var(--primary);
+  --color-btn-primary-text: var(--primary-foreground);
+  
+  --color-canvas-inset: var(--background);
+}

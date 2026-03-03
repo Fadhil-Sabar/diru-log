@@ -4,8 +4,10 @@
 	import DrawerContent from '../ui/drawer/drawer-content.svelte';
 	import DrawerTrigger from '../ui/drawer/drawer-trigger.svelte';
 	import Drawer from '../ui/drawer/drawer.svelte';
-	import { Menu, Github, X } from '@lucide/svelte';
+	import { Menu, Github, X, SunIcon, MoonIcon } from '@lucide/svelte';
 	import { page } from '$app/state';
+	import { toggleMode } from 'mode-watcher';
+	import Button from '../ui/button/button.svelte';
 
 	const navLinks = [
 		{ title: 'Home', path: '/' },
@@ -37,14 +39,15 @@
 	</div>
 
 	<div class="flex items-center gap-4">
-		<a
-			href="https://github.com/Fadhil-Sabar"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-		>
-			<Github size={20} />
-		</a>
+		<Button onclick={toggleMode} variant="outline" size="icon">
+			<SunIcon
+				class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all! dark:scale-0 dark:-rotate-90"
+			/>
+			<MoonIcon
+				class="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all! dark:scale-100 dark:rotate-0"
+			/>
+			<span class="sr-only">Toggle theme</span>
+		</Button>
 
 		<div class="md:hidden">
 			<Drawer direction="top">

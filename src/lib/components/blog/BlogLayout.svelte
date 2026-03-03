@@ -59,7 +59,7 @@
 		>
 			← Back to home
 		</a>
-		<h1 class="mb-4 text-4xl font-bold tracking-tight">{data.title}</h1>
+		<h1 class="mb-4 font-bold tracking-tight">{data.title}</h1>
 		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
 			<div class="flex items-center gap-2">
 				<span class="font-medium text-foreground">{data.writer}</span>

@@ -4,7 +4,7 @@
 	import DrawerContent from '../ui/drawer/drawer-content.svelte';
 	import DrawerTrigger from '../ui/drawer/drawer-trigger.svelte';
 	import Drawer from '../ui/drawer/drawer.svelte';
-	import { Menu, Github } from '@lucide/svelte';
+	import { Menu, Github, X } from '@lucide/svelte';
 	import { page } from '$app/state';
 
 	const navLinks = [
@@ -51,9 +51,13 @@
 				<DrawerTrigger class="rounded-md p-2 transition-colors hover:bg-secondary">
 					<Menu size={24} />
 				</DrawerTrigger>
-				<DrawerContent class="h-full w-full">
+				<DrawerContent class="w-full">
 					<div class="flex min-h-fit flex-col gap-6 p-8">
-						<h4 class="mb-4 text-xl font-bold">Menu</h4>
+						<div class="flex justify-end">
+							<DrawerClose>
+								<X />
+							</DrawerClose>
+						</div>
 						{#each navLinks as link}
 							<DrawerClose>
 								<a

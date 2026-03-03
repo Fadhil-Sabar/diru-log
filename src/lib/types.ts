@@ -1,5 +1,3 @@
-import type { Snippet } from "svelte"
-
 export type TMetaData = {
     title: string
     date: string
@@ -7,8 +5,7 @@ export type TMetaData = {
     category: string
     tags: Tag[]
     writer: string
-    lang: Lang,
-    children: Snippet
+    lang: Lang
 }
 
 enum Tag {

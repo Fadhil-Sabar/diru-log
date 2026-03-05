@@ -4,9 +4,20 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import Navbar from '$lib/components/shared/Navbar.svelte';
 	import Footer from '$lib/components/shared/Footer.svelte';
-	import { dev } from '$app/environment';
+	import { dev, browser } from '$app/environment';
+	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
+
+	afterNavigate((nav) => {
+		if (nav.type === 'enter') return;
+
+		if (!dev && browser && window.goatcounter?.count) {
+			window.goatcounter.count({
+				path: location.pathname + location.search
+			});
+		}
+	});
 </script>
 
 <svelte:head

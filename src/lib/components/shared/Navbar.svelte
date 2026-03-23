@@ -4,7 +4,7 @@
 	import DrawerContent from '../ui/drawer/drawer-content.svelte';
 	import DrawerTrigger from '../ui/drawer/drawer-trigger.svelte';
 	import Drawer from '../ui/drawer/drawer.svelte';
-	import { Menu, Github, X, SunIcon, MoonIcon } from '@lucide/svelte';
+	import { Menu, X, SunIcon, MoonIcon } from '@lucide/svelte';
 	import { page } from '$app/state';
 	import { toggleMode } from 'mode-watcher';
 	import Button from '../ui/button/button.svelte';
@@ -12,7 +12,7 @@
 	const navLinks = [
 		{ title: 'Home', path: '/' },
 		{ title: 'Blog', path: '/blog' }
-	];
+	] as const;
 </script>
 
 <nav
@@ -24,9 +24,9 @@
 		</h4>
 
 		<div class="hidden items-center gap-6 md:flex">
-			{#each navLinks as link}
+			{#each navLinks as link (link)}
 				<a
-					href={resolve(link.path as any)}
+					href={resolve(link.path)}
 					class="text-sm font-medium transition-colors hover:text-primary {page.url.pathname ===
 					link.path
 						? 'text-primary'
@@ -61,10 +61,10 @@
 								<X />
 							</DrawerClose>
 						</div>
-						{#each navLinks as link}
+						{#each navLinks as link (link.path)}
 							<DrawerClose>
 								<a
-									href={resolve(link.path as any)}
+									href={resolve(link.path)}
 									class="text-lg font-medium transition-colors hover:text-primary {page.url
 										.pathname === link.path
 										? 'text-primary'

@@ -37,7 +37,7 @@
 		<div
 			class="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row"
 		>
-			<p>&copy; {currentYear} Diru. All rights reserved.</p>
+			<p>&copy; {currentYear} Diru. Made with pride.</p>
 		</div>
 	</div>
 </footer>

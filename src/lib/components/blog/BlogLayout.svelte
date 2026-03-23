@@ -1,8 +1,11 @@
 <script lang="ts">
 	import type { TMetaData } from '$lib/types';
-	import type { Snippet } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 	import Giscus from '../shared/Giscus.svelte';
+	import Lightbox from '../shared/Lightbox.svelte';
 	import Badge from '../ui/badge/badge.svelte';
+	import { resolve } from '$app/paths';
+	import { MoveLeft } from '@lucide/svelte';
 
 	interface IProps extends TMetaData {
 		children: Snippet;
@@ -28,11 +31,23 @@
 		return Math.ceil(wordCount / wordsPerMinute);
 	};
 
-	let readingTime = $state(0);
+	let readingTime = $derived(0);
+	let selectedImage = $state<string | null>(null);
 
-	$effect(() => {
+	onMount(() => {
 		readingTime = calculateReadingTime(contentElement as HTMLElement);
 	});
+
+	function handleContentClick(event: MouseEvent) {
+		const target = event.target as HTMLElement;
+		if (target instanceof HTMLImageElement) {
+			selectedImage = target.src;
+		}
+	}
+
+	function closePopup() {
+		selectedImage = null;
+	}
 </script>
 
 <svelte:head>
@@ -56,10 +71,11 @@
 >
 	<header class="pb-6">
 		<a
-			href="/"
+			href={resolve('/')}
 			class="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground no-underline transition-colors hover:text-foreground"
 		>
-			← Back to home
+		  <MoveLeft size="20"/>
+      Back to home
 		</a>
 		<h1 class="mb-4 font-bold tracking-tight">{data.title}</h1>
 		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -85,9 +101,11 @@
 		</div>
 	</header>
 
-	<div class="content" bind:this={contentElement}>
+	<div class="content" bind:this={contentElement} onclick={handleContentClick} role="presentation">
 		{@render children()}
 	</div>
 
 	<Giscus />
 </article>
+
+<Lightbox src={selectedImage} onClose={closePopup} />

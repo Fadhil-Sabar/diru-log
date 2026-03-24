@@ -100,7 +100,7 @@
 	</div>
 
 	<div class="flex gap-2 py-4">
-    <span>Tags:</span>
+    <small>Tags:</small>
 		{#if data.tags}
 			{#each data.tags as tag (tag)}
 				<Badge

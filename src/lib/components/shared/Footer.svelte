@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail } from '@lucide/svelte';
+	import Github from '$lib/assets/icons/Github.svelte';
+	import LinkedIn from '$lib/assets/icons/LinkedIn.svelte';
+	import { Mail } from '@lucide/svelte';
 
 	const currentYear = new Date().getFullYear();
 </script>
@@ -14,7 +16,7 @@
 				class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 				aria-label="GitHub"
 			>
-				<Github size={18} />
+        <Github/>
 			</a>
 			<a
 				href="mailto:sabarfadhil@gmail.com"
@@ -30,7 +32,7 @@
 				class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 				aria-label="LinkedIn"
 			>
-				<Linkedin size={18} />
+        <LinkedIn/>
 			</a>
 		</div>
 

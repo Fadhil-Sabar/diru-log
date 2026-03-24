@@ -14,10 +14,10 @@ I'm Fadhil, currently working as a Software Developer in Indonesia!
 
 I'm not sure what I wan't to tell in my first post. But, recently I've been wondering it will be so nice if I have something to notes everything I've learn. My experience when trying linux, new framework, or even vibe coding.
 
-So I have a few friends that have something like this. The first one is Ahsan, [Tulisan Ahsan](https://blog.kejepangan.com) I really enjoy reading about anything that he shared like JKT48, Japan, or anything. The second one is Daffa, [Kouseina](https://kouseina.vercel.app) that has really comfy look website, also amaze with his skills too.
+So I have a few friends that have something like this. The first one is Ahsan, [Tulisan Ahsan](https://blog.kejepangan.com) I really enjoy reading about anything that he shared like JKT48, Japan, or anything. The second one is Daffa, [Kouseina](https://kouseina.vercel.app) that has really comfy look website, and thanks for the giscus idea.
 
-I was having a blogspot once in my Junior High School, and I was really enjoy writing about something. It comes from homework, but I really enjoy the moment. Yes, it is blogspot, long time no hear about that word..
+I was having a blogspot once in my Junior High School, and I was really enjoy writing about something. It comes from homework, but I really enjoy the moment. Yes, it is blogspot, long time no hear about that word.
 
-So, I hope I'm being consistent to share about my thought or experience.
+Sharing my thought is always been fun for me, and I hope it will useful to someone else. So, I hope I'm being consistent to share about my thought or experience.
 
 Thank you everyone for reading, happy ramadhan!

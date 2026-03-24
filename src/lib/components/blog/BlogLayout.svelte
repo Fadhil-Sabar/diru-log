@@ -9,6 +9,7 @@
 
 	interface IProps extends TMetaData {
 		children: Snippet;
+		views: number;
 	}
 	let { children, ...data }: IProps = $props();
 
@@ -74,35 +75,40 @@
 			href={resolve('/')}
 			class="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground no-underline transition-colors hover:text-foreground"
 		>
-		  <MoveLeft size="20"/>
-      Back to home
+			<MoveLeft size="20" />
+			Back to home
 		</a>
 		<h1 class="mb-4 font-bold tracking-tight">{data.title}</h1>
-		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+		<div class="flex flex-col flex-wrap items-start gap-4 text-sm text-muted-foreground">
 			<div class="flex items-center gap-2">
 				<span class="font-medium text-foreground">{data.writer}</span>
-				<span>•</span>
-				<Badge variant="secondary">{readingTime} min read</Badge>
 				<span>•</span>
 				<time datetime={data.date}>
 					{formatDate(data.date)}
 				</time>
 			</div>
 			<div class="flex gap-2">
-				{#if data.tags}
-					{#each data.tags as tag (tag)}
-						<Badge
-							variant="secondary"
-							class="border-none bg-secondary/50 transition-colors hover:bg-secondary">{tag}</Badge
-						>
-					{/each}
-				{/if}
+				<Badge variant="secondary">{readingTime} min read</Badge>
+				<span>•</span>
+				<Badge variant="secondary">{data.views} views</Badge>
 			</div>
 		</div>
 	</header>
 
 	<div class="content" bind:this={contentElement} onclick={handleContentClick} role="presentation">
 		{@render children()}
+	</div>
+
+	<div class="flex gap-2 py-4">
+    <span>Tags:</span>
+		{#if data.tags}
+			{#each data.tags as tag (tag)}
+				<Badge
+					variant="secondary"
+					class="border-none bg-secondary/50 transition-colors hover:bg-secondary">{tag}</Badge
+				>
+			{/each}
+		{/if}
 	</div>
 
 	<Giscus />

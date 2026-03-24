@@ -14,6 +14,12 @@ declare global {
 			count?: (vars: { path: string; title?: string; referrer?: string; event?: boolean }) => void;
 		};
 	}
+
+  interface Platform {
+    env: {
+      log: KVNamespace;
+    };
+  }
 }
 
 export {};

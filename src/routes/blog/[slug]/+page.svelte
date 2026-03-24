@@ -4,6 +4,6 @@
 	let { data } = $props();
 </script>
 
-<BlogLayout {...data.meta}>
+<BlogLayout {...data.meta} views={data.views}>
 	<data.content />
 </BlogLayout>

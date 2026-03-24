@@ -16,7 +16,7 @@
 				class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 				aria-label="GitHub"
 			>
-        <Github/>
+				<Github />
 			</a>
 			<a
 				href="mailto:sabarfadhil@gmail.com"
@@ -32,7 +32,7 @@
 				class="rounded-full p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 				aria-label="LinkedIn"
 			>
-        <LinkedIn/>
+				<LinkedIn />
 			</a>
 		</div>
 

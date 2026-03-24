@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {Dialog, DialogContent} from '$lib/components/ui/dialog';
+	import { Dialog, DialogContent } from '$lib/components/ui/dialog';
 
 	interface Props {
 		src: string | null;

@@ -21,13 +21,12 @@ lang: EN
   import Video from '$lib/components/shared/Video.svelte'
 </script>
 
-
 ## Hello Everyone!
 
 So here, I wanna share about my Linux experience. Which is already been 1 years since I tried daily drive using Linux.
 
 ![image]({linuxImg})
-*Screenshot from 27-01-2025*
+_Screenshot from 27-01-2025_
 
 So the image above is the first time I'm using Linux, daily. A few years ago, I've been trying Linux on my old Laptop, but still I don't get the maximum potential. I didn't explore about Linux, what I know is just it being faster than windows, since my old laptop is not that good.
 
@@ -44,11 +43,12 @@ Yes... I was tired using windows for development. It runs very well on small to 
 At first, I don't really know what Linux should I use, I don't really know what "Distro" is, or what is "Desktop Environtment", I have no idea what they are. Since I've been trying Ubuntu on my old Laptop, this is the first Linux distro that I choose.
 
 #### But how was the experience?
+
 It was amazing, and beautiful...
 I mean, look at this.
 
 ![image]({linuxImg2})
-*Screenshot from 31-01-2025*
+_Screenshot from 31-01-2025_
 
 Isn't that look fresh? After being whole time using Windows with that edgy UI, and not being able to do much customization by default. It feels like a freedom..
 
@@ -56,14 +56,13 @@ It might be a little bit dramatic, but seriously, it feels so much better. I don
 
 Working, learning, doing other stuff while keep everything running smoothly, and the biggest one is **customization**. But I'm still keeping Windows using dual boot, because just in case I need Windows for my college.
 
-I was really enjoy using *Ubuntu* with *GNOME* for a few month. I can do almost everything inside it. The performance still promising, even after a few month and heavy workload.
+I was really enjoy using _Ubuntu_ with _GNOME_ for a few month. I can do almost everything inside it. The performance still promising, even after a few month and heavy workload.
 
 > Ubuntu is one of most popular Linux Distro, because it give the feel like Windows, and it using LTS kernel. GNOME is Desktop Environtment, which is more like UI for accessing your computer.
 
-I feel very good for a while, but then I saw something in internet, it was *Hyprland*. It way more amazing than GNOME, I never regret using this WM.
+I feel very good for a while, but then I saw something in internet, it was _Hyprland_. It way more amazing than GNOME, I never regret using this WM.
 
 > Hyprland is a Window Manager, it is not the same as Desktop Environtment, it just maintaining your window (everytime you open application, it called window), and Hyprland handle it. What make it different to DE is, it doesn't have things to control your laptop, such as brightness, wifi, bluetooth, etc.
-
 
 ![image]({hyprland})
 *https://hypr.land/hall_of_fame/*
@@ -77,36 +76,36 @@ I mean, who even think that Super+D to open a drawer to launch an application? N
 But all of that suffer is really worth it. The experience, the feels, the speed, everything is perfect.
 
 ![image]({linuxImg3})
-*Screenshot from 2025-08-20*
+_Screenshot from 2025-08-20_
 
 Since that day, I'm trying to make myself comfort using Hyprland, with all of those shortcut. What I found is I really like it. I'm staying on Ubuntu for a few months, until someday I felt it become slower. It might be because of so much packages or from the distro itself.
 
 So I switched to Cachy OS.
 
 ![image]({linuxImg4})
-*Screenshot from 2025-10-29*
+_Screenshot from 2025-10-29_
 
 What I found in Cachy OS is, much more lighter than Ubuntu. Of course I choose Cachy OS because of it's based on Arch, Hyprland is updated on Arch linux which will make it more stable and fast.
 
 And it was really amazing, it is another dopamine learning all of this.
 
-  Until I get limited for my workflow using Hyprland, it's forcing me to split everytime I open another window, or I could just switch to other virtual desktop (workspace) and open another window. But still, it requires me to move another workspace just for getting fullscreen application. Also it much more difficult when I'm opening many window at a time.
+Until I get limited for my workflow using Hyprland, it's forcing me to split everytime I open another window, or I could just switch to other virtual desktop (workspace) and open another window. But still, it requires me to move another workspace just for getting fullscreen application. Also it much more difficult when I'm opening many window at a time.
 
 Long short story, I found something called Niri WM, which is another Window Manager, I'm quite impressed on it's size, compared to Hyprland it is less than 30 mb.
 
 ![image]({linuxImg5})
-*Screenshot from 2025-11-18*
+_Screenshot from 2025-11-18_
 
 But what I make me really want to try, is because of it's concept.
 
-> A scrollable-tiling Wayland compositor. 
+> A scrollable-tiling Wayland compositor.
 
 At least, that's what they said in their repository. Instead of make window to be split with another window, it stacking beside of other window, and it is infinite, which mean you can just open as much as u want.
 
 The workspace is really useful, on Hyprland the workspace is horizontal. But on Niri, it is vertical, and it perfectly matched what I want and what I need.
 
 ![image]({linuxImg6})
-*Screenshot from 2025-10-20, first time I'm using Niri*
+_Screenshot from 2025-10-20, first time I'm using Niri_
 
 <Video src={niriVid} title="Niri"/>
 

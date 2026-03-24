@@ -6,6 +6,7 @@
 	import Footer from '$lib/components/shared/Footer.svelte';
 	import { dev, browser } from '$app/environment';
 	import { afterNavigate } from '$app/navigation';
+	import NavigationSplash from '$lib/components/shared/NavigationSplash.svelte';
 
 	let { children } = $props();
 
@@ -32,6 +33,7 @@
 	{/if}
 </svelte:head>
 
+<NavigationSplash />
 <ModeWatcher />
 <div class="relative container mx-auto flex min-h-svh max-w-4xl flex-col">
 	<Navbar />

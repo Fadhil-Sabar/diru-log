@@ -15,11 +15,11 @@ declare global {
 		};
 	}
 
-  interface Platform {
-    env: {
-      log: KVNamespace;
-    };
-  }
+	interface Platform {
+		env: {
+			log: KVNamespace;
+		};
+	}
 }
 
 export {};

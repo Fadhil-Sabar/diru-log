@@ -1,19 +1,19 @@
 export type TMetaData = {
-    title: string
-    date: string
-    description: string
-    category: string
-    tags: Tag[]
-    writer: string
-    lang: Lang
-}
+	title: string;
+	date: string;
+	description: string;
+	category: string;
+	tags: Tag[];
+	writer: string;
+	lang: Lang;
+};
 
 enum Tag {
-    webdev,
-    personal
+	webdev,
+	personal
 }
 
 enum Lang {
-    EN,
-    ID
-} 
+	EN,
+	ID
+}

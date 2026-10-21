@@ -45,38 +45,40 @@
 				class="animate-in duration-500 fade-in slide-in-from-bottom-2"
 				style="animation-delay: {i * 50}ms"
 			>
-				<Item class="group transition-colors hover:bg-secondary/50">
-					<a
-						href={resolve((blog.slug ? '/blog/' + blog.slug : '/') as any)}
-						class="flex items-center gap-4 p-4"
-					>
-						<ItemMedia variant="image" class="shrink-0">
-							<Badge
-								class="border-none bg-primary/10 text-xs font-bold text-primary uppercase transition-colors hover:bg-primary/20"
-							>
-								{blog.meta.lang}
-							</Badge>
-						</ItemMedia>
-						<ItemContent class="min-w-0 flex-1">
-							<div class="mb-1 flex items-baseline justify-between gap-4">
-								<ItemTitle
-									class="line-clamp-1 text-lg font-semibold transition-colors group-hover:text-primary"
+				<Item
+					variant="muted"
+					class="group flex items-center gap-4 p-3 transition-colors hover:bg-secondary/50"
+				>
+					{#snippet child({ props })}
+						<a href={resolve((blog.slug ? '/blog/' + blog.slug : '/') as any)} {...props}>
+							<ItemMedia variant="image" class="shrink-0">
+								<Badge
+									class="border-none bg-primary/10 text-xs font-bold text-primary uppercase transition-colors hover:bg-primary/20"
 								>
-									{blog.meta.title}
-								</ItemTitle>
-								<span class="text-xs whitespace-nowrap text-muted-foreground">
-									{new Date(blog.meta.date).toLocaleDateString('en-US', {
-										month: 'short',
-										day: 'numeric',
-										year: 'numeric'
-									})}
-								</span>
-							</div>
-							<ItemDescription class="line-clamp-2 text-sm leading-relaxed">
-								{blog.meta.description}
-							</ItemDescription>
-						</ItemContent>
-					</a>
+									{blog.meta.lang}
+								</Badge>
+							</ItemMedia>
+							<ItemContent class="min-w-0 flex-1">
+								<div class="mb-1 flex items-baseline justify-between gap-4">
+									<ItemTitle
+										class="line-clamp-1 text-lg font-semibold transition-colors group-hover:text-primary"
+									>
+										{blog.meta.title}
+									</ItemTitle>
+									<span class="text-xs whitespace-nowrap text-muted-foreground">
+										{new Date(blog.meta.date).toLocaleDateString('en-US', {
+											month: 'short',
+											day: 'numeric',
+											year: 'numeric'
+										})}
+									</span>
+								</div>
+								<ItemDescription class="line-clamp-2 text-sm leading-relaxed">
+									{blog.meta.description}
+								</ItemDescription>
+							</ItemContent>
+						</a>
+					{/snippet}
 				</Item>
 			</div>
 		{:else}
